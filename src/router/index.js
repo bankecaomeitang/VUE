@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Product from '@/components/product'
 import Info from '@/components/info'
+import Select from '@/components/select'
 
 Vue.use(Router)
 
@@ -20,6 +21,10 @@ export default new Router({
       path: '/info',
       name: 'Info',
       component: Info
+    }, {
+      path: '/Select',
+      name: 'Select',
+      component: Select
     }
   ]
 })

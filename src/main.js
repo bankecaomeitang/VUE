@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/store.js'
+import VueEditor from 'vue-ueditor'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import {sync} from 'vuex-router-sync'
@@ -18,6 +19,9 @@ new Vue({
   el: '#app',
   router,
   store,
-  components: { App },
+  components: {
+    App,
+    VueEditor
+  },
   template: '<App/>'
 })
