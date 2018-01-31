@@ -1,16 +1,19 @@
 <template>
   <div>
-    <my-button></my-button>
+    <my-count></my-count>
   </div>
 </template>
+
 <script>
-import myButton from '../components/myButton.vue'
+import myCount from '../components/myCount.vue'
+
 export default {
   components: {
-    myButton
+    myCount
   }
 }
 </script>
+
 <style>
 
 </style>

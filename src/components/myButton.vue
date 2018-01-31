@@ -1,14 +1,15 @@
 <template>
   <div>
-    <div id="counter-event-example">
-      <my-button></my-button>
+    <div class="myBtn">
+      <button>自定义的button</button>
     </div>
   </div>
 </template>
 <script>
 export default {
-//   component: ('my-button', {
-//     template: '<button v-on:click="incrementCounter">自定义按钮</button>',
-//   }
+
 }
 </script>
+<style>
+.myBtn button{width: 150px;height: 130px;background: red;color: #fff}
+</style>

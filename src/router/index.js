@@ -5,9 +5,8 @@ import Product from '@/components/product'
 import Info from '@/components/info'
 import Select from '@/components/select'
 import My01 from '@/components/my01'
-import Loading from '@/components/loading'
-import testButton from '@/view/testButton'
-import MyButton from '@component/myButton'
+import TestButton from '@/view/testButton'
+import Count from '@/view/count'
 
 Vue.use(Router)
 
@@ -34,17 +33,13 @@ export default new Router({
       name: 'My01',
       component: My01
     }, {
-      path: '/loading',
-      name: 'Loading',
-      component: Loading
+      path: '/TestButton',
+      name: 'TestButton',
+      component: TestButton
     }, {
-      path: '/testButton',
-      name: 'testButton',
-      component: testButton
-    }, {
-      path: '/MyButton',
-      name: 'MyButton',
-      component: MyButton
+      path: '/count',
+      name: 'Count',
+      component: Count
     }
   ]
 })
