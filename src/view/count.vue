@@ -1,6 +1,6 @@
 <template>
   <div>
-    <my-count></my-count>
+    <my-count num = '10'></my-count>
   </div>
 </template>
 

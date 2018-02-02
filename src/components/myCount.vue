@@ -6,11 +6,15 @@
 
 <script>
 export default {
-  data () {
-    return {
-      num: 0
-    }
+  components: {
+    props: [ 'num' ],
+    template: '<span>{{num}}</span>'
   },
+  // data () {
+  //   return {
+  //     num: 0
+  //   }
+  // },
   methods: {
     add: function () {
       this.num++
