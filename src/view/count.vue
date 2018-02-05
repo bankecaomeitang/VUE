@@ -1,6 +1,6 @@
 <template>
   <div>
-    <my-count num = '10'></my-count>
+    <my-count :uNum = 'nums'></my-count>
   </div>
 </template>
 
@@ -10,6 +10,11 @@ import myCount from '../components/myCount.vue'
 export default {
   components: {
     myCount
+  },
+  data () {
+    return {
+      nums: 15
+    }
   }
 }
 </script>

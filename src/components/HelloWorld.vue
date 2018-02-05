@@ -3,7 +3,7 @@
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <my-button></my-button>
-    <my-count></my-count>
+    <my-count :uNum = 'nums' v-on:increment='total'></my-count>
   </div>
 </template>
 
@@ -18,7 +18,13 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      nums: 10
+    }
+  },
+  methods: {
+    total: function (value) {
+      console.log(value)
     }
   }
 }

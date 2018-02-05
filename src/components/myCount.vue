@@ -1,26 +1,26 @@
 <template>
   <div>
-      <p class="myCount"><button @click="add">+</button><span>{{ num }}</span><button @click="reduce">-</button></p>
+      <p class="myCount"><button @click="add(); incrementCounter()">+</button><span>{{ num }}</span><button @click="reduce(); incrementCounter()">-</button></p>
   </div>
 </template>
 
 <script>
 export default {
-  components: {
-    props: [ 'num' ],
-    template: '<span>{{num}}</span>'
+  props: [ 'uNum' ],
+  data () {
+    return {
+      num: this.uNum
+    }
   },
-  // data () {
-  //   return {
-  //     num: 0
-  //   }
-  // },
   methods: {
     add: function () {
       this.num++
     },
     reduce: function () {
       this.num--
+    },
+    incrementCounter: function () {
+      this.$emit('increment', this.num)
     }
   }
 }
